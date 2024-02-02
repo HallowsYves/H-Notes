@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB26F17E2B6C6FF000555325 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB26F17D2B6C6FF000555325 /* DrawingView.swift */; };
+		FB26F1802B6C705900555325 /* line.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB26F17F2B6C705900555325 /* line.swift */; };
+		FB26F1822B6C74B500555325 /* DrawingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB26F1812B6C74B500555325 /* DrawingEngine.swift */; };
 		FB721F312B6C6D9400182F05 /* TestDrawApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB721F302B6C6D9400182F05 /* TestDrawApp.swift */; };
 		FB721F332B6C6D9400182F05 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB721F322B6C6D9400182F05 /* ContentView.swift */; };
 		FB721F352B6C6D9600182F05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB721F342B6C6D9600182F05 /* Assets.xcassets */; };
@@ -34,14 +37,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FB721F2D2B6C6D9400182F05 /* TestDraw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestDraw.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB26F17D2B6C6FF000555325 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
+		FB26F17F2B6C705900555325 /* line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = line.swift; sourceTree = "<group>"; };
+		FB26F1812B6C74B500555325 /* DrawingEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingEngine.swift; sourceTree = "<group>"; };
+		FB721F2D2B6C6D9400182F05 /* H-Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "H-Notes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB721F302B6C6D9400182F05 /* TestDrawApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDrawApp.swift; sourceTree = "<group>"; };
 		FB721F322B6C6D9400182F05 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FB721F342B6C6D9600182F05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB721F372B6C6D9600182F05 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		FB721F3D2B6C6D9600182F05 /* TestDrawTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestDrawTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB721F3D2B6C6D9600182F05 /* H-NotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "H-NotesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB721F412B6C6D9600182F05 /* TestDrawTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDrawTests.swift; sourceTree = "<group>"; };
-		FB721F472B6C6D9600182F05 /* TestDrawUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestDrawUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB721F472B6C6D9600182F05 /* H-NotesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "H-NotesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB721F4B2B6C6D9600182F05 /* TestDrawUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDrawUITests.swift; sourceTree = "<group>"; };
 		FB721F4D2B6C6D9600182F05 /* TestDrawUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDrawUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,7 +80,7 @@
 		FB721F242B6C6D9400182F05 = {
 			isa = PBXGroup;
 			children = (
-				FB721F2F2B6C6D9400182F05 /* TestDraw */,
+				FB721F2F2B6C6D9400182F05 /* H-Notes */,
 				FB721F402B6C6D9600182F05 /* TestDrawTests */,
 				FB721F4A2B6C6D9600182F05 /* TestDrawUITests */,
 				FB721F2E2B6C6D9400182F05 /* Products */,
@@ -84,22 +90,25 @@
 		FB721F2E2B6C6D9400182F05 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FB721F2D2B6C6D9400182F05 /* TestDraw.app */,
-				FB721F3D2B6C6D9600182F05 /* TestDrawTests.xctest */,
-				FB721F472B6C6D9600182F05 /* TestDrawUITests.xctest */,
+				FB721F2D2B6C6D9400182F05 /* H-Notes.app */,
+				FB721F3D2B6C6D9600182F05 /* H-NotesTests.xctest */,
+				FB721F472B6C6D9600182F05 /* H-NotesUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FB721F2F2B6C6D9400182F05 /* TestDraw */ = {
+		FB721F2F2B6C6D9400182F05 /* H-Notes */ = {
 			isa = PBXGroup;
 			children = (
-				FB721F302B6C6D9400182F05 /* TestDrawApp.swift */,
+				FB26F17F2B6C705900555325 /* line.swift */,
 				FB721F322B6C6D9400182F05 /* ContentView.swift */,
+				FB721F302B6C6D9400182F05 /* TestDrawApp.swift */,
 				FB721F342B6C6D9600182F05 /* Assets.xcassets */,
 				FB721F362B6C6D9600182F05 /* Preview Content */,
+				FB26F17D2B6C6FF000555325 /* DrawingView.swift */,
+				FB26F1812B6C74B500555325 /* DrawingEngine.swift */,
 			);
-			path = TestDraw;
+			path = "H-Notes";
 			sourceTree = "<group>";
 		};
 		FB721F362B6C6D9600182F05 /* Preview Content */ = {
@@ -130,9 +139,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FB721F2C2B6C6D9400182F05 /* TestDraw */ = {
+		FB721F2C2B6C6D9400182F05 /* H-Notes */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FB721F512B6C6D9600182F05 /* Build configuration list for PBXNativeTarget "TestDraw" */;
+			buildConfigurationList = FB721F512B6C6D9600182F05 /* Build configuration list for PBXNativeTarget "H-Notes" */;
 			buildPhases = (
 				FB721F292B6C6D9400182F05 /* Sources */,
 				FB721F2A2B6C6D9400182F05 /* Frameworks */,
@@ -142,14 +151,14 @@
 			);
 			dependencies = (
 			);
-			name = TestDraw;
+			name = "H-Notes";
 			productName = TestDraw;
-			productReference = FB721F2D2B6C6D9400182F05 /* TestDraw.app */;
+			productReference = FB721F2D2B6C6D9400182F05 /* H-Notes.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FB721F3C2B6C6D9600182F05 /* TestDrawTests */ = {
+		FB721F3C2B6C6D9600182F05 /* H-NotesTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FB721F542B6C6D9600182F05 /* Build configuration list for PBXNativeTarget "TestDrawTests" */;
+			buildConfigurationList = FB721F542B6C6D9600182F05 /* Build configuration list for PBXNativeTarget "H-NotesTests" */;
 			buildPhases = (
 				FB721F392B6C6D9600182F05 /* Sources */,
 				FB721F3A2B6C6D9600182F05 /* Frameworks */,
@@ -160,14 +169,14 @@
 			dependencies = (
 				FB721F3F2B6C6D9600182F05 /* PBXTargetDependency */,
 			);
-			name = TestDrawTests;
+			name = "H-NotesTests";
 			productName = TestDrawTests;
-			productReference = FB721F3D2B6C6D9600182F05 /* TestDrawTests.xctest */;
+			productReference = FB721F3D2B6C6D9600182F05 /* H-NotesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		FB721F462B6C6D9600182F05 /* TestDrawUITests */ = {
+		FB721F462B6C6D9600182F05 /* H-NotesUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FB721F572B6C6D9600182F05 /* Build configuration list for PBXNativeTarget "TestDrawUITests" */;
+			buildConfigurationList = FB721F572B6C6D9600182F05 /* Build configuration list for PBXNativeTarget "H-NotesUITests" */;
 			buildPhases = (
 				FB721F432B6C6D9600182F05 /* Sources */,
 				FB721F442B6C6D9600182F05 /* Frameworks */,
@@ -178,9 +187,9 @@
 			dependencies = (
 				FB721F492B6C6D9600182F05 /* PBXTargetDependency */,
 			);
-			name = TestDrawUITests;
+			name = "H-NotesUITests";
 			productName = TestDrawUITests;
-			productReference = FB721F472B6C6D9600182F05 /* TestDrawUITests.xctest */;
+			productReference = FB721F472B6C6D9600182F05 /* H-NotesUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -206,7 +215,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FB721F282B6C6D9400182F05 /* Build configuration list for PBXProject "TestDraw" */;
+			buildConfigurationList = FB721F282B6C6D9400182F05 /* Build configuration list for PBXProject "H-Notes" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -219,9 +228,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FB721F2C2B6C6D9400182F05 /* TestDraw */,
-				FB721F3C2B6C6D9600182F05 /* TestDrawTests */,
-				FB721F462B6C6D9600182F05 /* TestDrawUITests */,
+				FB721F2C2B6C6D9400182F05 /* H-Notes */,
+				FB721F3C2B6C6D9600182F05 /* H-NotesTests */,
+				FB721F462B6C6D9600182F05 /* H-NotesUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -257,6 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB26F1822B6C74B500555325 /* DrawingEngine.swift in Sources */,
+				FB26F17E2B6C6FF000555325 /* DrawingView.swift in Sources */,
+				FB26F1802B6C705900555325 /* line.swift in Sources */,
 				FB721F332B6C6D9400182F05 /* ContentView.swift in Sources */,
 				FB721F312B6C6D9400182F05 /* TestDrawApp.swift in Sources */,
 			);
@@ -284,12 +296,12 @@
 /* Begin PBXTargetDependency section */
 		FB721F3F2B6C6D9600182F05 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FB721F2C2B6C6D9400182F05 /* TestDraw */;
+			target = FB721F2C2B6C6D9400182F05 /* H-Notes */;
 			targetProxy = FB721F3E2B6C6D9600182F05 /* PBXContainerItemProxy */;
 		};
 		FB721F492B6C6D9600182F05 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FB721F2C2B6C6D9400182F05 /* TestDraw */;
+			target = FB721F2C2B6C6D9400182F05 /* H-Notes */;
 			targetProxy = FB721F482B6C6D9600182F05 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -485,7 +497,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestDraw.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestDraw";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/H-Notes.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/H-Notes";
 			};
 			name = Debug;
 		};
@@ -504,7 +516,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestDraw.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestDraw";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/H-Notes.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/H-Notes";
 			};
 			name = Release;
 		};
@@ -545,7 +557,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FB721F282B6C6D9400182F05 /* Build configuration list for PBXProject "TestDraw" */ = {
+		FB721F282B6C6D9400182F05 /* Build configuration list for PBXProject "H-Notes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FB721F4F2B6C6D9600182F05 /* Debug */,
@@ -554,7 +566,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FB721F512B6C6D9600182F05 /* Build configuration list for PBXNativeTarget "TestDraw" */ = {
+		FB721F512B6C6D9600182F05 /* Build configuration list for PBXNativeTarget "H-Notes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FB721F522B6C6D9600182F05 /* Debug */,
@@ -563,7 +575,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FB721F542B6C6D9600182F05 /* Build configuration list for PBXNativeTarget "TestDrawTests" */ = {
+		FB721F542B6C6D9600182F05 /* Build configuration list for PBXNativeTarget "H-NotesTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FB721F552B6C6D9600182F05 /* Debug */,
@@ -572,7 +584,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FB721F572B6C6D9600182F05 /* Build configuration list for PBXNativeTarget "TestDrawUITests" */ = {
+		FB721F572B6C6D9600182F05 /* Build configuration list for PBXNativeTarget "H-NotesUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FB721F582B6C6D9600182F05 /* Debug */,
